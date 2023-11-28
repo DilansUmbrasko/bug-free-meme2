@@ -11,7 +11,7 @@ reg_name = filtered_df.iloc[0, 0]
 region = []
 
 with open('2LD/data.csv', 'r') as f:
-    next(f)  # Skip header
+    next(f)
     for line in f:
         row = line.rstrip().split(',')
         if row[1] == reg_name:
